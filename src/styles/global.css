@@ -1,0 +1,4 @@
+/* https://tailwindcss.com/docs/guides/gatsby#include-tailwind-in-your-css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
