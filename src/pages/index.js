@@ -1,5 +1,6 @@
 import * as React from "react"
 import Layout from '../components/Layout'
+import Map from '../components/Map'
 
 // styles
 const pageStyles = {
@@ -18,31 +19,31 @@ const headingAccentStyles = {
 
 const StepsComponent = () => {
   return (
-  <div class="overflow-x-auto">
-    <ul class="w-full steps">
-      <li data-content="☂️" class="step">1</li> 
-      <li data-content="❄️" class="step step-secondary">2</li> 
-      <li data-content="🌧️" class="step step-secondary">3</li> 
-      <li data-content="☀️" class="step step-secondary">4</li> 
-      <li data-content="☁️" class="step">5</li> 
-      <li data-content="⛈️" class="step step-accent">6</li> 
-      <li data-content="🍱" class="step step-accent">7</li> 
-      <li data-content="🍱" class="step">8</li> 
-      <li data-content="🍱" class="step step-error">9</li> 
-      <li data-content="🍱" class="step step-error">10</li> 
-      <li data-content="🍱" class="step">11</li> 
-      <li data-content="🍱" class="step">12</li> 
-      <li data-content="🍱" class="step step-warning">13</li> 
-      <li data-content="🍱" class="step step-warning">14</li> 
-      <li data-content="🍱" class="step">15</li> 
-      <li data-content="🍱" class="step step-neutral">16</li> 
-      <li data-content="🍱" class="step step-neutral">17</li> 
-      <li data-content="🍱" class="step step-neutral">18</li> 
-      <li data-content="🍱" class="step step-neutral">19</li> 
-      <li data-content="🍱" class="step step-neutral">20</li> 
-      <li data-content="🍱" class="step step-neutral">21</li> 
-      <li data-content="🍱" class="step step-neutral">22</li> 
-      <li data-content="🍱" class="step step-neutral">23</li> 
+  <div className="overflow-x-auto">
+    <ul className="w-full steps">
+      <li data-content="☂️" className="step">1</li>
+      <li data-content="❄️" className="step step-secondary">2</li>
+      <li data-content="🌧️" className="step step-secondary">3</li>
+      <li data-content="☀️" className="step step-secondary">4</li>
+      <li data-content="☁️" className="step">5</li>
+      <li data-content="⛈️" className="step step-accent">6</li>
+      <li data-content="🍱" className="step step-accent">7</li>
+      <li data-content="🍱" className="step">8</li>
+      <li data-content="🍱" className="step step-error">9</li>
+      <li data-content="🍱" className="step step-error">10</li>
+      <li data-content="🍱" className="step">11</li>
+      <li data-content="🍱" className="step">12</li>
+      <li data-content="🍱" className="step step-warning">13</li>
+      <li data-content="🍱" className="step step-warning">14</li>
+      <li data-content="🍱" className="step">15</li>
+      <li data-content="🍱" className="step step-neutral">16</li>
+      <li data-content="🍱" className="step step-neutral">17</li>
+      <li data-content="🍱" className="step step-neutral">18</li>
+      <li data-content="🍱" className="step step-neutral">19</li>
+      <li data-content="🍱" className="step step-neutral">20</li>
+      <li data-content="🍱" className="step step-neutral">21</li>
+      <li data-content="🍱" className="step step-neutral">22</li>
+      <li data-content="🍱" className="step step-neutral">23</li>
     </ul>
   </div>
   )
@@ -51,17 +52,16 @@ const StepsComponent = () => {
 const IndexPage = () => {
   return (
     <Layout pageTitle="About Me">
-          <main style={pageStyles}>
-      <title>Home Page</title>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-      </h1>
-      <div data-theme="light">
-      <StepsComponent />
-    </div>
-
-    
+      <main style={pageStyles}>
+        <title>Home Page</title>
+        <h1 style={headingStyles}>
+          Congratulations
+          <br />
+        </h1>
+        <div data-theme="light">
+        <StepsComponent />
+        <Map />
+      </div>
     </main>
     </Layout>
   )
