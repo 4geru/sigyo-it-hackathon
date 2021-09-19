@@ -1,6 +1,8 @@
 import * as React from "react"
 import Layout from '../components/Layout'
 import Map from '../components/Map'
+import InfoAlert from '../components/InfoAlert'
+import Modal from '../components/Modal'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
@@ -73,15 +75,30 @@ const IndexPage = () => {
             <Card>
               <StepsCardComponent />
             </Card>
-            <div class="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-6">
               <Card>
                 <Map />
               </Card>
-              <Card>
+              <Card
+                title={'playground'}
+              >
+                <InfoAlert>
+                  class="" must be change className=""
+                </InfoAlert>
                 <h3>font awesome</h3>
                 <FontAwesomeIcon icon={faMapMarkerAlt} />
                 <h3>image</h3>
                 <img src={'/images/pin_red.png'} alt="Logo" className="h-10 w-10" />
+                <h3>modal</h3>
+                <Modal
+                  modalId={'my-modal-2'}
+                >
+                  <p>Enim dolorem dolorum omnis atque necessitatibus. Consequatur aut adipisci qui iusto illo eaque. Consequatur repudiandae et. Nulla ea quasi eligendi. Saepe velit autem minima.</p> 
+                  <div className="modal-action">
+                    <label htmlFor='my-modal-2' className="btn btn-primary">Accept</label>
+                    <label htmlFor='my-modal-2' className="btn">Close</label>
+                  </div>
+                </Modal>
               </Card>
             </div>
           </div>
