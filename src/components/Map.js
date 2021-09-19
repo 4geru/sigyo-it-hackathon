@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
 const containerStyle = {
-  height: "60vh",
-  width: "40%",
+  height: "45vh",
+  width: "100%",
 };
 
 const center = {
@@ -37,11 +37,6 @@ function Map() {
 
   return isLoaded ? (
     <>
-      <br/>
-      <FontAwesomeIcon icon={faMapMarkerAlt} />
-      <br/>
-      <br/>
-      <img src={'/images/pin_red.png'} alt="Logo" />
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}

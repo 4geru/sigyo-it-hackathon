@@ -1,6 +1,4 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
-
 
 const roundStyles = {
   strokeLinecap: "round",
@@ -39,7 +37,6 @@ const Layout = ({ pageTitle, children }) => {
       <title>{pageTitle}</title>
       <Header/>
       <main>
-        <h1>{pageTitle}</h1>
         {children}
       </main>
     </div>
