@@ -7,7 +7,7 @@ const roundStyles = {
 }
 const Header = () => {
   return (
-    <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box">
+    <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box m-3">
       <div className="flex-none">
         <button className="btn btn-square btn-ghost">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current">
