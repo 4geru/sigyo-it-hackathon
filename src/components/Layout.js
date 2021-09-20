@@ -6,7 +6,14 @@ const roundStyles = {
   strokeWidth: "2"
 }
 
-const Header = () => {
+// styles
+const pageStyles = {
+  color: "#232129",
+  padding: 96,
+  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+}
+
+const Header = ({pageTitle}) => {
   return (
     <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box m-3">
       <div className="flex-none">
@@ -18,7 +25,7 @@ const Header = () => {
       </div> 
       <div className="flex-1 px-2 mx-2">
         <span className="text-lg font-bold">
-            With two icons
+            {`With two icons ${pageTitle}`}
         </span>
       </div> 
       <div className="flex-none">
@@ -36,8 +43,10 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <div>
       <title>{pageTitle}</title>
-      <Header/>
-      <main>
+      <Header
+        pageTitle={pageTitle}
+      />
+      <main style={pageStyles}>
         {children}
       </main>
     </div>
