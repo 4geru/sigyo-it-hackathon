@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import Map from '../components/Map'
 import InfoAlert from '../components/InfoAlert'
 import Modal from '../components/Modal'
+import SideModal from '../components/SideModal'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
@@ -90,15 +91,24 @@ const IndexPage = () => {
                 <h3>image</h3>
                 <img src={'/images/pin_red.png'} alt="Logo" className="h-10 w-10" />
                 <h3>modal</h3>
-                <Modal
-                  modalId={'my-modal-2'}
-                >
-                  <p>Enim dolorem dolorum omnis atque necessitatibus. Consequatur aut adipisci qui iusto illo eaque. Consequatur repudiandae et. Nulla ea quasi eligendi. Saepe velit autem minima.</p> 
-                  <div className="modal-action">
-                    <label htmlFor='my-modal-2' className="btn btn-primary">Accept</label>
-                    <label htmlFor='my-modal-2' className="btn">Close</label>
-                  </div>
-                </Modal>
+                <div className="flex-auto">
+                  <Modal
+                    modalId={'my-modal-2'}
+                    buttonText={'open modal'}
+                  >
+                    <p>Enim dolorem dolorum omnis atque necessitatibus. Consequatur aut adipisci qui iusto illo eaque. Consequatur repudiandae et. Nulla ea quasi eligendi. Saepe velit autem minima.</p> 
+                    <div className="modal-action">
+                      <label htmlFor='my-modal-2' className="btn btn-primary">Accept</label>
+                      <label htmlFor='my-modal-2' className="btn">Close</label>
+                    </div>
+                  </Modal>
+                  <SideModal
+                    title={'Panel title'}
+                    buttonText={'open side modal'}
+                  >
+                    <p>Enim dolorem dolorum omnis atque necessitatibus. Consequatur aut adipisci qui iusto illo eaque. Consequatur repudiandae et. Nulla ea quasi eligendi. Saepe velit autem minima.</p> 
+                  </SideModal>
+                </div>
               </Card>
             </div>
           </div>
