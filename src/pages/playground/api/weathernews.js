@@ -1,6 +1,7 @@
 import * as React from "react"
 import Layout from '@components/Layout'
 import Card from '@components/Card'
+import Breadcrumbs from '@components/Breadcrumbs'
 import axios from 'axios'
 
 const useWeatherAPI = () => {
@@ -152,6 +153,15 @@ const WeatherAPIComponent = () => {
 const Page = () => {
   return (
     <Layout pageTitle="Weathernews API">
+      <Breadcrumbs
+        breadcrumbs={
+          [
+            {link: '/', title: 'home'},
+            {link: '/playground', title: 'PlayGround'},
+            {link: '/playground/api/weathernews', title: 'weathernews'}
+          ]
+        }
+      />
       <WeatherAPIComponent />
     </Layout>
   )

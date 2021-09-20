@@ -5,6 +5,7 @@ import InfoAlert from '@components/InfoAlert'
 import Modal from '@components/Modal'
 import SideModal from '@components/SideModal'
 import Card from '@components/Card'
+import Breadcrumbs from '@components/Breadcrumbs'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "gatsby"
@@ -116,11 +117,17 @@ const PlayGroundCard = () => {
 const IndexPage = () => {
   return (
     <Layout pageTitle="PlayGround">
-      <div data-theme="light">
-        <div className="grid gap-6">
-          <StepsCard />
-          <PlayGroundCard />
-        </div>
+      <div className="grid gap-6">
+        <Breadcrumbs
+          breadcrumbs={
+            [
+              {link: '/', title: 'home'},
+              {link: '/playground', title: 'PlayGround'}
+            ]
+          }
+        />
+        <StepsCard />
+        <PlayGroundCard />
       </div>
     </Layout>
   )

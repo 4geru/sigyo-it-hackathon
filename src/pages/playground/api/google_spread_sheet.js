@@ -1,6 +1,7 @@
 import * as React from "react"
 import Layout from '@components/Layout'
 import Card from '@components/Card'
+import Breadcrumbs from '@components/Breadcrumbs'
 import axios from 'axios'
 
 const SpreadSheetApiTestComponent = () => {
@@ -63,6 +64,15 @@ const SpreadSheetApiTestComponent = () => {
 const Page = () => {
   return (
     <Layout pageTitle="Google Spread Sheet API">
+      <Breadcrumbs
+        breadcrumbs={
+          [
+            {link: '/', title: 'home'},
+            {link: '/playground', title: 'PlayGround'},
+            {link: '/playground/api/google_spread_sheet', title: 'Google Spread Sheet API'}
+          ]
+        }
+      />
       <Card>
         <SpreadSheetApiTestComponent />
       </Card>
