@@ -9,7 +9,7 @@ const roundStyles = {
 // styles
 const pageStyles = {
   color: "#232129",
-  padding: 96,
+  padding: 20,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 

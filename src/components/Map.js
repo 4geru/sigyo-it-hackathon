@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
 const containerStyle = {
-  height: "45vh",
+  height: "40vh",
   width: "100%",
 };
 
