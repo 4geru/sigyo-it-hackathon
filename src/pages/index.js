@@ -86,11 +86,16 @@ const IndexPage = () => {
                 <InfoAlert>
                   class="" must be change className=""
                 </InfoAlert>
-                <h3>font awesome</h3>
-                <FontAwesomeIcon icon={faMapMarkerAlt} />
-                <h3>image</h3>
-                <img src={'/images/pin_red.png'} alt="Logo" className="h-10 w-10" />
-                <h3>modal</h3>
+                <div className="grid grid-cols-2 gap-6">
+                  <Card>
+                    <h3>font awesome</h3>
+                    <FontAwesomeIcon icon={faMapMarkerAlt} />
+                  </Card>
+                  <Card>
+                    <h3>image</h3>
+                    <img src={'/images/pin_red.png'} alt="Logo" className="h-10 w-10" />
+                  </Card>
+                </div>
                 <div className="flex-auto">
                   <Modal
                     modalId={'my-modal-2'}
