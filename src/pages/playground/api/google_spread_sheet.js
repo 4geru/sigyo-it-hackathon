@@ -36,7 +36,7 @@ const SpreadSheetApiTestComponent = () => {
         </thead>
         <tbody>
           {Object.keys(spreadSheetApiList).slice(1).map((index) => (
-            <tr key={`tr-${index}`}>
+            <tr key={`tr-${index}`} className="hover">
               {Object.values(spreadSheetApiList[index]).map((text, tdIndex) =>
                 (
                   <td key={`td-${index}-${tdIndex}`}>
@@ -62,7 +62,7 @@ const SpreadSheetApiTestComponent = () => {
 
 const Page = () => {
   return (
-    <Layout pageTitle="API">
+    <Layout pageTitle="Google Spread Sheet API">
       <Card>
         <SpreadSheetApiTestComponent />
       </Card>
