@@ -5,6 +5,7 @@ const roundStyles = {
   strokeLinejoin: "round",
   strokeWidth: "2"
 }
+
 const Header = () => {
   return (
     <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box m-3">
