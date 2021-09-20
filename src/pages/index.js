@@ -1,9 +1,9 @@
 import * as React from "react"
-import Layout from '../components/Layout'
-import Map from '../components/Map'
-import InfoAlert from '../components/InfoAlert'
-import Modal from '../components/Modal'
-import SideModal from '../components/SideModal'
+import Layout from '@components/Layout'
+import Map from '@components/Map'
+import InfoAlert from '@components/InfoAlert'
+import Modal from '@components/Modal'
+import SideModal from '@components/SideModal'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
@@ -68,7 +68,7 @@ const Card = ({ children, title }) => {
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="About Me">
+    <Layout pageTitle="Top">
       <main style={pageStyles}>
         <title>Home Page</title>
         <div data-theme="light">
