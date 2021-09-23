@@ -75,9 +75,9 @@ const WeatherAPIComponent = () => {
         weatherAPIData?.mrf &&
           <Card title={activeTab}>
             <div className="tabs w-full">
-              <a className={`tab tab-lifted ${ activeTab === 'mrf' && 'tab-active' }`} onClick={() => {setActiveTab('mrf')}}>mrf</a>
-              <a className={`tab tab-lifted ${ activeTab === 'srf' && 'tab-active' }`} onClick={() => {setActiveTab('srf')}}>srf</a>
-              <a className="flex-grow tab tab-lifted"></a>
+              <button className={`tab tab-lifted ${ activeTab === 'mrf' && 'tab-active' }`} onClick={() => {setActiveTab('mrf')}}>mrf</button>
+              <button className={`tab tab-lifted ${ activeTab === 'srf' && 'tab-active' }`} onClick={() => {setActiveTab('srf')}}>srf</button>
+              <button className="flex-grow tab tab-lifted">{` `}</button>
             </div>
             {
               activeTab === 'mrf' &&
