@@ -10,7 +10,7 @@ const SpreadSheetApiTestComponent = () => {
   // 初期化をする
   React.useEffect(() => {
     axios(
-      process.env.SPREAD_SHEET_URL
+      process.env.GATSBY_VERCEL_ENV_SPREAD_SHEET_URL
     ).then(result => {
       setSpreadSheetApiList(result.data);
     })

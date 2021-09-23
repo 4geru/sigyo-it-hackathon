@@ -32,7 +32,7 @@ const clicked = (name) => {
 const Map = () => {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: process.env.GOOGLE_MAP_API_KEY
+    googleMapsApiKey: process.env.GATSBY_VERCEL_ENV_GOOGLE_MAP_API_KEY
   })
 
   return isLoaded ? (
