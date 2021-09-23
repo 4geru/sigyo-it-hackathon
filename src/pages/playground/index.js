@@ -93,18 +93,18 @@ const PlayGroundCard = () => {
             </SideModal>
           </div>
         </Card>
-        <Card title="Reference">
+        <Card title="API sample">
+          <div className="flex gap-6">
+            <Link className="btn btn-outline" to="/playground/api/google_spread_sheet">GAS</Link>
+            <Link className="btn btn-outline" to="/playground/api/weathernews">WeatherNews</Link>
+          </div>
+        </Card>
+        <Card title="Reference" className="col-span-2">
           <div className="flex gap-6">
             <Link className="btn btn-outline" to="https://www.gatsbyjs.com/docs/reference/" target="_blank">Gatsby</Link>
             <Link className="btn btn-outline btn-primary" to="https://tailwindcss.com/docs/grid-template-columns" target="_blank">Tailwind CSS</Link>
             <Link className="btn btn-outline btn-primary" to="https://tailwindcomponents.com/" target="_blank">Tailwind Components</Link>
             <Link className="btn btn-outline btn-accent" to="https://daisyui.com/components/divider" target="_blank">daisyUI</Link>
-          </div>
-        </Card>
-        <Card title="API sample">
-          <div className="flex gap-6">
-            <Link className="btn btn-outline" to="/playground/api/google_spread_sheet">GAS</Link>
-            <Link className="btn btn-outline" to="/playground/api/weathernews">WeatherNews</Link>
           </div>
         </Card>
         <Card title="Map" className="col-span-2">
