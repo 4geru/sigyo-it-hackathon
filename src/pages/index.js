@@ -9,6 +9,15 @@ const IndexPage = () => {
       <div className="grid place-items-center">
         <Link className="btn btn-wide" to="/playground">PlayGround</Link>
       </div>
+      <div className="grid place-items-center">
+        <Link className="btn btn-wide" to="/search">カテゴリから探す</Link>
+      </div>
+      <div className="grid place-items-center">
+        <Link className="btn btn-wide" to="/search">現在地から探す</Link>
+      </div>
+      <div className="grid place-items-center">
+        <Link className="btn btn-wide" to="/search">観光地から探す</Link>
+      </div>
     </Layout>
   )
 }
