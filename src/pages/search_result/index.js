@@ -28,7 +28,7 @@ const Page = () => {
   return (
     <Layout pageTitle="検索結果">
       <title>検索結果</title>
-      検索結果
+      <h1 className="text-2xl">検索結果</h1>
       <Timeline items={items} />
     </Layout>
   )
