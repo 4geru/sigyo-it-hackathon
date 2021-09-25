@@ -5,12 +5,12 @@ const Timeline = ({items}) => {
   return (
     <div className="container bg-gray-200 mx-auto w-full h-full">
       <div className="relative wrap overflow-hidden p-1 h-full">
-        <div className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border ml-4"></div>
+        <div className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border ml-6"></div>
         {
           items.map((item, index) => {
             return (
               <div className="mb-8 flex items-center w-full right-timeline" key={index}>
-                <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-12 h-12 rounded-full">
                   <h1 className="mx-auto font-semibold text-xs text-white">{item.time}</h1>
                 </div>
                 <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-10/12 px-6 py-4">
