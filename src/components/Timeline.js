@@ -21,8 +21,8 @@ const Timeline = ({items}) => {
                     </div>
                   </h3>
                   <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">{item.content}</p>
-                  <img src={item.image_url} alt={ `item-${item.name}-${index}` } />
-                  <Link classNameName="btn btn-sm m-1" to={item.google_map_url} >マップ</Link>
+                  <img src={item.image_url} alt={ `item-${item.name}-${index}` } className="w-full" />
+                  <Link className="btn btn-sm m-1" to={item.google_map_url} >マップ</Link>
                 </div>
               </div>
             )
