@@ -1,6 +1,19 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
+const Deatil = ({message}) => {
+  return (
+    <div tabindex="0" class="collapse w-auto">
+      <div class="collapse-title text-sm" style={{minHeight: '2px', padding: '2px'}}>
+        詳細
+      </div>
+      <div class="collapse-content">
+        <p>{message}</p>
+      </div>
+    </div>
+  )
+}
+
 const Timeline = ({items}) => {
   return (
     <div className="container bg-gray-200 mx-auto w-full h-full">
@@ -20,7 +33,7 @@ const Timeline = ({items}) => {
                       <img src={ `https://tpf.weathernews.jp/wxicon/152/${item.status}.png` } alt={ `item-weather-${item.name}-${index}` } className="w-10 ml-2" />
                     </div>
                   </h3>
-                  <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">{item.content}</p>
+                  <Deatil message={item.content} />
                   <img src={item.image_url} alt={ `item-${item.name}-${index}` } className="w-full" />
                   <Link className="btn btn-sm m-1" to={item.google_map_url} >マップ</Link>
                 </div>
