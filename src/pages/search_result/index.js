@@ -11,7 +11,7 @@ const Page = () => {
       lat: 34.174568,
       log: 132.191162,
       status: 100,
-      image_url: 'https://stat.ameba.jp/user_images/20200226/13/miyajimakinsuikan/93/44/j/o0660040014719249324.jpg',
+      image_url: 'https://www.be-en.co.jp/upload/save_image/M81-596.jpg',
       google_map_url: 'https://goo.gl/maps/qK7AAsEtiJ6y6xZe6',
     },
     {
@@ -21,7 +21,7 @@ const Page = () => {
       lat: 34.174568,
       log: 132.191162,
       status: 200,
-      image_url: 'https://stat.ameba.jp/user_images/20200226/13/miyajimakinsuikan/93/44/j/o0660040014719249324.jpg',
+      image_url: 'https://www.begladstore.com/blog/wp-content/uploads/2015/07/IMG_8776.jpg',
       google_map_url: 'https://goo.gl/maps/qK7AAsEtiJ6y6xZe6',
     },
   ]
