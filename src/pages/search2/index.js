@@ -11,19 +11,19 @@ const IndexPage = () => {
           ビショビショになりたい？
         </div>
         <div className="search-answer">
-          <Link className="btn btn-wide" to="/result">はい</Link>
+          <Link className="btn btn-wide" to="/search_result">はい</Link>
         </div>
         <div className="search-answer">
-          <Link className="btn btn-wide" to="/result">いいえ</Link>
+          <Link className="btn btn-wide" to="/search_result">いいえ</Link>
         </div>
         <div className="search-answer">
-          <Link className="btn btn-wide" to="/result">わからない</Link>
+          <Link className="btn btn-wide" to="/search_result">わからない</Link>
         </div>
         <div className="search-answer">
-          <Link className="btn btn-wide" to="/result">たぶんそう/部分的にそう</Link>
+          <Link className="btn btn-wide" to="/search_result">たぶんそう/部分的にそう</Link>
         </div>
         <div className="search-answer">
-          <Link className="btn btn-wide" to="/result">たぶん違う/そうでもない</Link>
+          <Link className="btn btn-wide" to="/search_result">たぶん違う/そうでもない</Link>
         </div>
       </div>
     </Layout>
