@@ -22,7 +22,6 @@ const IndexPage = () => {
         <div className="search-answer">
           <Link className="btn btn-wide" to="/search2">ひとりで</Link>
         </div>
-
       </div>
     </Layout>
   )
