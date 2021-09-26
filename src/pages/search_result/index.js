@@ -10,14 +10,14 @@ const getRandomInt = (max) => {
   return Math.floor(Math.random() * max);
 }
 
-const ReSearch = ({reload}) => {
-  const nextRoute = getRandomInt(4)
+const ReSearch = ({reload, routeId}) => {
+  const nextRoute = routeId + 1
   return  <div className="research-wrap">
     <div className="research">
         <Link className="btn btn-error research-btn" aria-pressed="true" to='/'>やり直す</Link>
       </div>
       <div className="research">
-        <Link className="btn btn-success research-btn" aria-pressed="true" to={ `/search_result?route=${nextRoute}` } onClick={reload}>別プランをみる</Link>
+        <Link className="btn btn-success research-btn" aria-pressed="true" to={ `/search_result?route=${nextRoute + 1}` } onClick={reload}>別プランをみる</Link>
     </div>
 
     <div className="research">
@@ -200,7 +200,7 @@ const modelRoute = [
 const Page = ({location}) => {
   const params = new URLSearchParams(location.search);
   const route = parseInt(params.get("route")) || 3
-  const items = modelRoute[route]
+  const items = modelRoute[route % 4]
 
   const [isLodaing, setLoading] = React.useState(true)
   const reload = async () => {
@@ -223,7 +223,8 @@ const Page = ({location}) => {
       <ReSearch reload={async () => {
         setLoading(true)
         reload()
-      }} />
+      }}
+      routeId={route}/>
     </Layout>
   )
 }
