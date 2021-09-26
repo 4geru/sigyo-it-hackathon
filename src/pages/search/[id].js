@@ -36,6 +36,7 @@ const IndexPage = ({params}) => {
   var id = Number(params.id)
   var nextPage = id + 1
   var qa = qas.filter(e => e.id === id)[0]
+  if(!qa)return <></>
   var nextQa = qas.filter(e => e.id === id + 1)
   console.log(nextQa)
   if (id == qas.length){
