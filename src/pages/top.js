@@ -10,7 +10,7 @@ const Page = () => {
         <div className="text-center hero-content text-neutral-content">
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">
-              旅ネイター
+              旅ネーター
             </h1>
             <p className="mb-5">
             あなたの旅、天気によって生まれ変わる
