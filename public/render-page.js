@@ -7248,24 +7248,24 @@ if (false) {} else {
 /***/ }),
 
 /***/ "react-dom/server":
-/*!****************************************************************************************************!*\
-  !*** external "/Users/uchinishi.koichi/train/sigyo-it-hackathon/node_modules/react-dom/server.js" ***!
-  \****************************************************************************************************/
+/*!**************************************************************************************************************!*\
+  !*** external "C:\\Users\\OWNER\\Documents\\GitHub\\sigyo-it-hackathon\\node_modules\\react-dom\\server.js" ***!
+  \**************************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/uchinishi.koichi/train/sigyo-it-hackathon/node_modules/react-dom/server.js");
+module.exports = require("C:\\Users\\OWNER\\Documents\\GitHub\\sigyo-it-hackathon\\node_modules\\react-dom\\server.js");
 
 /***/ }),
 
 /***/ "react":
-/*!***********************************************************************************************!*\
-  !*** external "/Users/uchinishi.koichi/train/sigyo-it-hackathon/node_modules/react/index.js" ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************************!*\
+  !*** external "C:\\Users\\OWNER\\Documents\\GitHub\\sigyo-it-hackathon\\node_modules\\react\\index.js" ***!
+  \*********************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/uchinishi.koichi/train/sigyo-it-hackathon/node_modules/react/index.js");
+module.exports = require("C:\\Users\\OWNER\\Documents\\GitHub\\sigyo-it-hackathon\\node_modules\\react\\index.js");
 
 /***/ })
 
