@@ -18,8 +18,8 @@ function Button(props) {
 }
 
 function Selector(title,url){
-    return <Layout pageTitle="Top">
-      <title>タビネーター</title>
+    return <Layout pageTitle="質問">
+      <title>旅ネーター</title>
       <Card title={title}>
         <div className="grid place-items-center">
           <Button name= 'はい' url = {url}/>

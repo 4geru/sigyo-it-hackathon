@@ -5,8 +5,8 @@ import Card from '@components/Card'
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="カテゴリー">
-      <title>カテゴリー</title>
+    <Layout pageTitle="トップ">
+      <title>トップページ</title>
       <div className="grid place-items-center">
         {/* <Link className="btn btn-wide" to="/playground">PlayGround</Link>
         <Link className="btn btn-wide" to="/search_result">検索結果</Link> */}

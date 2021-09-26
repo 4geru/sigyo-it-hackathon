@@ -2,6 +2,7 @@ import * as React from "react"
 import Layout from '@components/Layout'
 import Timeline from '@components/Timeline'
 import Loading from '@components/Loading'
+import { Link } from "gatsby"
 
 const sleep = msec => new Promise(resolve => setTimeout(resolve, msec));
 
@@ -39,11 +40,28 @@ const Page = () => {
     <Loading />
   </Layout>
 
+function ReSearch() {
+  return  <div className="research-wrap">
+    <div className="research">
+        <Link className="btn btn-error research-btn" aria-pressed="true" to='/'>やり直す</Link>
+      </div>
+      <div className="research">
+        <Link className="btn btn-success research-btn" aria-pressed="true" to='/search_result'>別プランをみる</Link>
+    </div>
+
+    <div className="research">
+        <Link className="btn btn-info research-btn" aria-pressed="true" to='/'>保存</Link>
+    </div>
+   </div>
+}
+
   return (
     <Layout pageTitle="検索結果">
       <title>検索結果</title>
       <h1 className="text-2xl">検索結果</h1>
       <Timeline items={items} />
+
+      <ReSearch/>
     </Layout>
   )
 }
