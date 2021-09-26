@@ -6,6 +6,27 @@ import { Link } from "gatsby"
 
 const sleep = msec => new Promise(resolve => setTimeout(resolve, msec));
 
+const getRandomInt = (max) => {
+  return Math.floor(Math.random() * max);
+}
+
+const ReSearch = ({reload}) => {
+  const nextRoute = getRandomInt(4)
+  return  <div className="research-wrap">
+    <div className="research">
+        <Link className="btn btn-error research-btn" aria-pressed="true" to='/'>やり直す</Link>
+      </div>
+      <div className="research">
+        <Link className="btn btn-success research-btn" aria-pressed="true" to={ `/search_result?route=${nextRoute}` } onClick={reload}>別プランをみる</Link>
+    </div>
+
+    <div className="research">
+        <Link className="btn btn-info research-btn" aria-pressed="true" to='/'>保存</Link>
+    </div>
+   </div>
+}
+
+
 const modelRoute = [
   [ // 晴れルート
     {
@@ -176,34 +197,22 @@ const modelRoute = [
   ]
 ]
 
-// https://xxx/search_result?route=1
-const items = modelRoute[3]
+const Page = ({location}) => {
+  const params = new URLSearchParams(location.search);
+  const route = parseInt(params.get("route")) || 3
+  const items = modelRoute[route]
 
-const Page = () => {
   const [isLodaing, setLoading] = React.useState(true)
-  React.useEffect(async () => {
+  const reload = async () => {
     await sleep(1500)
     setLoading(false)
-  });
+  }
+  React.useEffect(reload);
+
   if(isLodaing) return <Layout pageTitle="検索中">
     <title>検索中</title>
     <Loading />
   </Layout>
-
-function ReSearch() {
-  return  <div className="research-wrap">
-    <div className="research">
-        <Link className="btn btn-error research-btn" aria-pressed="true" to='/'>やり直す</Link>
-      </div>
-      <div className="research">
-        <Link className="btn btn-success research-btn" aria-pressed="true" to='/search_result'>別プランをみる</Link>
-    </div>
-
-    <div className="research">
-        <Link className="btn btn-info research-btn" aria-pressed="true" to='/'>保存</Link>
-    </div>
-   </div>
-}
 
   return (
     <Layout pageTitle="検索結果">
@@ -211,7 +220,10 @@ function ReSearch() {
       <h1 className="text-2xl">検索結果</h1>
       <Timeline items={items} />
 
-      <ReSearch/>
+      <ReSearch reload={async () => {
+        setLoading(true)
+        reload()
+      }} />
     </Layout>
   )
 }
