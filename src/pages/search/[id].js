@@ -39,8 +39,8 @@ const IndexPage = ({params}) => {
   if(!qa)return <></>
   var nextQa = qas.filter(e => e.id === id + 1)
   console.log(nextQa)
-  if (id == qas.length){
-    return Selector(qa.title, "/result")
+  if (id === qas.length){
+    return Selector(qa.title, "/search_result")
   } else {
     return Selector(qa.title, "/search/" + nextPage)
   }

@@ -26,8 +26,8 @@ const Header = ({pageTitle}) => {
       <div className="flex-1 px-2 mx-2">
         <span className="text-lg font-bold">
           {/* {`たびネイター ${pageTitle}`} */}
-          {/* {`旅ネイター ${pageTitle}`} */}
-          {`Tabinator ${pageTitle}`}
+          {`旅ネイター ${pageTitle}`}
+          {/* {`Tabinator ${pageTitle}`} */}
         </span>
       </div> 
       <div className="flex-none">

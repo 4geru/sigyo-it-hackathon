@@ -14,7 +14,7 @@ const Page = () => {
               旅ネイター
             </h1>
             <p className="mb-5">
-            雨でも心躍る旅、はじめよう
+            あなたの旅、天気によって生まれ変わる
             </p>
             <Link className="btn btn-primary" to="/">Get Started</Link>
           </div>
