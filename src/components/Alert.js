@@ -9,7 +9,7 @@ const Alert = () => {
   <div className="flex-col">
     <Card>
     <div className="flex justify-center">
-      <FontAwesomeIcon icon={faExclamationTriangle} className="fa-10x" />
+      <img src="https://4.bp.blogspot.com/-cb2z48B3614/UyrZrlwtgAI/AAAAAAAAeXY/XSsdsv9gczw/s400/lamp_majin.png"></img>
       </div>
       <div className="flex justify-items-center mt-10">
         <h1 class="text-xl">危険な天気が近づいています</h1>

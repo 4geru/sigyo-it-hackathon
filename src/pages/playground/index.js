@@ -7,7 +7,7 @@ import SideModal from '@components/SideModal'
 import Card from '@components/Card'
 import Breadcrumbs from '@components/Breadcrumbs'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+import { faMapMarkerAlt, faUtensils, faUniversity } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "gatsby"
 
 const StepsCard = () => {
@@ -65,6 +65,8 @@ const PlayGroundCard = () => {
               <tr>
                 <td>
                   <FontAwesomeIcon icon={faMapMarkerAlt} />
+                  <FontAwesomeIcon icon={faUtensils} />
+                  <FontAwesomeIcon icon={faUniversity} />
                 </td>
                 <td>
                   <img src={'/images/pin_red.png'} alt="Logo" className="h-10 w-10" />
