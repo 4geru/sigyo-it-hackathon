@@ -1,3 +1,12 @@
 .search-answer {
   margin: 10px;
 }
+
+.research-wrap {
+  text-align: center;
+}
+
+.research {
+  margin: 10px 3px;
+  display: inline-block;
+}

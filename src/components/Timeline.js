@@ -3,14 +3,13 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faThumbsUp, faThumbsDown, faUtensils, faUniversity } from '@fortawesome/free-solid-svg-icons'
 
-
-const Detail = ({message}) => {
+const Deatil = ({message, index}) => {
   return (
-    <div tabindex="0" class="collapse w-auto">
-      <div class="collapse-title text-sm" style={{minHeight: '2px', padding: '2px'}}>
+    <div tabindex={index} className="collapse w-auto">
+      <div className="collapse-title text-sm" style={{minHeight: '2px', padding: '2px'}}>
         詳細
       </div>
-      <div class="collapse-content">
+      <div className="collapse-content">
         <p>{message}</p>
       </div>
     </div>
