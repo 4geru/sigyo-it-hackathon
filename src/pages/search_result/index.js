@@ -16,71 +16,168 @@ const modelRoute = [
       log: 132.191162,
       status: 100,
       image_url: 'https://www.be-en.co.jp/upload/save_image/M81-596.jpg',
-      google_map_url: 'https://goo.gl/maps/qK7AAsEtiJ6y6xZe6',
+      google_map_url: 'https://goo.gl/maps/Cxya6Zd364uv3kRu9',
     },
     {
       time: '13:00',
       name: '牡蠣屋',
       content: '宮島で新鮮な牡蠣を心ゆくまでご堪能ください。',
-      lat: 34.174568,
-      log: 132.191162,
+      lat: 34.29854,
+      log: 132.321704,
       status: 200,
-      image_url: 'https://www.begladstore.com/blog/wp-content/uploads/2015/07/IMG_8776.jpg',
-      google_map_url: 'https://goo.gl/maps/qK7AAsEtiJ6y6xZe6',
+      image_url: 'https://tabiiro.jp/lpimg/gourmet/300650/main/img1.jpg',
+      google_map_url: 'https://goo.gl/maps/QGbAGWRQJMN2GAVH9',
     },
     {
       time: '15:00',
       name: '原爆ドーム',
       content: '世界平和の祈りを込めたヒロシマの象徴は世界平和を訴えようと市民が一丸となって働きかけたことで、1996年世界遺産に登録された。',
-      lat: 34.174568,
-      log: 132.191162,
-      status: 200,
-      image_url: 'https://www.begladstore.com/blog/wp-content/uploads/2015/07/IMG_8776.jpg',
-      google_map_url: 'https://goo.gl/maps/qK7AAsEtiJ6y6xZe6',
+      lat: 34.395483,
+      log: 132.453592,
+      status: 100,
+      image_url: 'https://www.asahicom.jp/articles/images/AS20190907000759_comm.jpg',
+      google_map_url: 'https://goo.gl/maps/Cxya6Zd364uv3kRu9',
     },
     {
       time: '18:00',
       name: '電光石火駅前広場店',
       content: '地元の人にも人気のお好み焼き屋。アクセスの抜群でいつも賑わう。',
+      lat: 34.396781,
+      log: 132.472841,
+      status: 100,
+      image_url: 'https://park.ajinomoto.co.jp/wp-content/uploads/2018/03/704432.jpeg',
+      google_map_url: 'https://goo.gl/maps/XCfWopX5ZvJnj7S79',
+    },
+  ],
+  [ // 雨ルート
+    {
+      time: '10:00',
+      name: 'みやじマリン',
+      content: '宮島にある屋内型の水族館はリラックスできるスポットとして家族連れに人気。',
+      lat: 34.295403,
+      log: 132.315839,
+      status: 300,
+      image_url: 'https://www.hiroshima-kankou.com/image/rendering/attraction_image/21531/trim.1180/3/2?v=02ee79d3a6453fbe2d6f81fc76e95973d7dcf87b',
+      google_map_url: 'https://goo.gl/maps/SVyP4YVqp8gsvUWe7',
+    },
+    {
+      time: '13:00',
+      name: '牡蠣屋',
+      content: '宮島で新鮮な牡蠣を心ゆくまでご堪能ください。',
+      lat: 34.29854,
+      log: 132.321704,
+      status: 300,
+      image_url: 'https://tabiiro.jp/lpimg/gourmet/300650/main/img1.jpg',
+      google_map_url: 'https://goo.gl/maps/QGbAGWRQJMN2GAVH9',
+    },
+    {
+      time: '15:00',
+      name: '平和記念資料館',
+      content: '原爆の悲惨さについての展示で世界的に有名な観光地としていつも賑わっている。',
+      lat: 35.691421,
+      log: 139.692595,
+      status: 300,
+      image_url: 'https://www.nishinippon.co.jp/uploads/image/93935/middle_cc79c1cd51.jpg',
+      google_map_url: 'https://goo.gl/maps/aKLqisqUjo5vTQTR7',
+    },
+    {
+      time: '18:00',
+      name: '電光石火駅前広場店',
+      content: '地元の人にも人気のお好み焼き屋。アクセスの抜群でいつも賑わう。',
+      lat: 34.396781,
+      log: 132.472841,
+      status: 300,
+      image_url: 'https://park.ajinomoto.co.jp/wp-content/uploads/2018/03/704432.jpeg',
+      google_map_url: 'https://goo.gl/maps/XCfWopX5ZvJnj7S79',
+    },
+  ],
+  [ // 晴れ→雨ルート
+    {
+      time: '10:00',
+      name: '厳島神社',
+      content: '「神を斎（いつ）き祀（まつ）る島」という語源のように、古くから島そのものが神として信仰されていたという厳島（宮島）。その海上に神秘的に建っている嚴島神社は、1996年世界遺産に登録された。',
       lat: 34.174568,
       log: 132.191162,
-      status: 200,
-      image_url: 'https://www.begladstore.com/blog/wp-content/uploads/2015/07/IMG_8776.jpg',
-      google_map_url: 'https://goo.gl/maps/qK7AAsEtiJ6y6xZe6',
+      status: 100,
+      image_url: 'https://www.be-en.co.jp/upload/save_image/M81-596.jpg',
+      google_map_url: 'https://goo.gl/maps/Cxya6Zd364uv3kRu9',
     },
-
-
-
-
-
-
-
-
-
-
-
-
+    {
+      time: '13:00',
+      name: '牡蠣屋',
+      content: '宮島で新鮮な牡蠣を心ゆくまでご堪能ください。',
+      lat: 34.29854,
+      log: 132.321704,
+      status: 200,
+      image_url: 'https://tabiiro.jp/lpimg/gourmet/300650/main/img1.jpg',
+      google_map_url: 'https://goo.gl/maps/QGbAGWRQJMN2GAVH9',
+    },
+    {
+      time: '15:00',
+      name: '平和記念資料館',
+      content: '原爆の悲惨さについての展示で世界的に有名な観光地としていつも賑わっている。',
+      lat: 35.691421,
+      log: 139.692595,
+      status: 300,
+      image_url: 'https://www.nishinippon.co.jp/uploads/image/93935/middle_cc79c1cd51.jpg',
+      google_map_url: 'https://goo.gl/maps/aKLqisqUjo5vTQTR7',
+    },
+    {
+      time: '18:00',
+      name: '電光石火駅前広場店',
+      content: '地元の人にも人気のお好み焼き屋。アクセスの抜群でいつも賑わう。',
+      lat: 34.396781,
+      log: 132.472841,
+      status: 300,
+      image_url: 'https://park.ajinomoto.co.jp/wp-content/uploads/2018/03/704432.jpeg',
+      google_map_url: 'https://goo.gl/maps/XCfWopX5ZvJnj7S79',
+    },
   ],
-
-
-
-
-
-
-
-
-
-
-
-
-
-  [
-    // 雨ルート
+  [ // 雨→晴れルート
+    {
+      time: '10:00',
+      name: 'みやじマリン',
+      content: '宮島にある屋内型の水族館はリラックスできるスポットとして家族連れに人気。',
+      lat: 34.295403,
+      log: 132.315839,
+      status: 300,
+      image_url: 'https://www.hiroshima-kankou.com/image/rendering/attraction_image/21531/trim.1180/3/2?v=02ee79d3a6453fbe2d6f81fc76e95973d7dcf87b',
+      google_map_url: 'https://goo.gl/maps/SVyP4YVqp8gsvUWe7',
+    },
+    {
+      time: '13:00',
+      name: '牡蠣屋',
+      content: '宮島で新鮮な牡蠣を心ゆくまでご堪能ください。',
+      lat: 34.29854,
+      log: 132.321704,
+      status: 200,
+      image_url: 'https://tabiiro.jp/lpimg/gourmet/300650/main/img1.jpg',
+      google_map_url: 'https://goo.gl/maps/QGbAGWRQJMN2GAVH9',
+    },
+    {
+      time: '15:00',
+      name: '原爆ドーム',
+      content: '世界平和の祈りを込めたヒロシマの象徴は世界平和を訴えようと市民が一丸となって働きかけたことで、1996年世界遺産に登録された。',
+      lat: 34.395483,
+      log: 132.453592,
+      status: 100,
+      image_url: 'https://www.asahicom.jp/articles/images/AS20190907000759_comm.jpg',
+      google_map_url: 'https://goo.gl/maps/Cxya6Zd364uv3kRu9',
+    },    {
+      time: '18:00',
+      name: '電光石火駅前広場店',
+      content: '地元の人にも人気のお好み焼き屋。アクセスの抜群でいつも賑わう。',
+      lat: 34.396781,
+      log: 132.472841,
+      status: 100,
+      image_url: 'https://park.ajinomoto.co.jp/wp-content/uploads/2018/03/704432.jpeg',
+      google_map_url: 'https://goo.gl/maps/XCfWopX5ZvJnj7S79',
+    },
   ]
 ]
 
 // https://xxx/search_result?route=1
-const items = modelRoute[0]
+const items = modelRoute[3]
 
 const Page = () => {
   const [isLodaing, setLoading] = React.useState(true)
