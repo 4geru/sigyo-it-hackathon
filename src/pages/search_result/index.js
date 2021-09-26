@@ -1,6 +1,9 @@
 import * as React from "react"
 import Layout from '@components/Layout'
 import Timeline from '@components/Timeline'
+import Loading from '@components/Loading'
+
+const sleep = msec => new Promise(resolve => setTimeout(resolve, msec));
 
 const Page = () => {
   const items = [
@@ -25,6 +28,17 @@ const Page = () => {
       google_map_url: 'https://goo.gl/maps/qK7AAsEtiJ6y6xZe6',
     },
   ]
+
+  const [isLodaing, setLoading] = React.useState(true)
+  React.useEffect(async () => {
+    await sleep(1500)
+    setLoading(false)
+  }, []);
+  if(isLodaing) return <Layout pageTitle="検索中">
+    <title>検索中</title>
+    <Loading />
+  </Layout>
+
   return (
     <Layout pageTitle="検索結果">
       <title>検索結果</title>
