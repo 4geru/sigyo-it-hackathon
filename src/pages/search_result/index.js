@@ -33,7 +33,7 @@ const Page = () => {
   React.useEffect(async () => {
     await sleep(1500)
     setLoading(false)
-  }, []);
+  });
   if(isLodaing) return <Layout pageTitle="検索中">
     <title>検索中</title>
     <Loading />
